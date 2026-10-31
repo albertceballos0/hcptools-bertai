@@ -1,0 +1,37 @@
+slurmstepd: info: Setting TMPDIR to /scratch/11156854. Previous errors about TMPDIR can be discarded
+cesga/2020 unloaded
+        Preparing the environment for use of the CESGA 2020 software stack.
+        Please rebuild modules cache: module --ignore-cache avail
+     
+cesga/2020 loaded
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) cesga/2020
+Found cached dataset parquet (/mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7)
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:01<00:01,  1.54s/it]100%|██████████| 2/2 [00:01<00:00,  1.30it/s]100%|██████████| 2/2 [00:01<00:00,  1.13it/s]
+Loading cached processed dataset at /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7/cache-3dca6ded7a309e0f_*_of_00008.arrow
+Loading cached processed dataset at /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7/cache-eeaac9fc3bba987b_*_of_00008.arrow
+Found cached dataset parquet (/mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7)
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 556.16it/s]
+Loading cached processed dataset at /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7/cache-3dca6ded7a309e0f_*_of_00008.arrow
+Loading cached processed dataset at /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7/cache-eeaac9fc3bba987b_*_of_00008.arrow
+Found cached dataset parquet (/mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7)
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 514.48it/s]
+Loading cached processed dataset at /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7/cache-3dca6ded7a309e0f_*_of_00008.arrow
+Loading cached processed dataset at /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7/cache-eeaac9fc3bba987b_*_of_00008.arrow
+Some weights of the model checkpoint at google-bert/bert-base-uncased were not used when initializing BertForQuestionAnswering: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForQuestionAnswering were not initialized from the model checkpoint at google-bert/bert-base-uncased and are newly initialized: ['qa_outputs.weight', 'qa_outputs.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of the model checkpoint at google-bert/bert-base-uncased were not used when initializing BertForQuestionAnswering: ['cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForQuestionAnswering were not initialized from the model checkpoint at google-bert/bert-base-uncased and are newly initialized: ['qa_outputs.bias', 'qa_outputs.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ddp_1x2] world_size=2 nodes=1 gpu=NVIDIA A100-PCIE-40GB features_train=88524 batch/GPU=32 global_batch=64 steps/epoch=1383 precision=bf16
+[ddp_1x2] epoch 1/2 train_loss=1.7277 time=219.5s throughput=403.2 samples/s
+[ddp_1x2] epoch 2/2 train_loss=0.8968 time=218.0s throughput=406.0 samples/s
+RESULT {"tag": "ddp_1x2", "gpus": 2, "nodes": 1, "batch_per_gpu": 32, "global_batch": 64, "epochs": 2, "precision": "bf16", "train_features": 88524, "epoch_times_s": [219.5084389410913, 218.02574664913118], "train_time_s": 437.5341855902225, "throughput_samples_s": 404.5946712968248, "train_loss": [1.7277299165725708, 0.8967986106872559], "val_loss": 1.0269789695739746, "peak_mem_gb_max_rank": 11.82414722442627, "slurm_job_id": "11156854"}
+Resultados en /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/runs/ddp_1x2_11156854.json
