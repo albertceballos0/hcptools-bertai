@@ -1,0 +1,26 @@
+slurmstepd: info: Setting TMPDIR to /scratch/11157061. Previous errors about TMPDIR can be discarded
+cesga/2020 unloaded
+        Preparing the environment for use of the CESGA 2020 software stack.
+        Please rebuild modules cache: module --ignore-cache avail
+     
+cesga/2020 loaded
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) cesga/2020
+torch 1.13.1+cu117 | transformers 4.30.2
+NVIDIA A100-PCIE-40GB, 40960 MiB
+Found cached dataset parquet (/mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7)
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 99.97it/s]
+Loading cached processed dataset at /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7/cache-3dca6ded7a309e0f_*_of_00008.arrow
+Loading cached processed dataset at /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/hf/datasets/rajpurkar___parquet/plain_text-7d14fdbf55ecc00c/0.0.0/14a00e99c0d15a23649d0db8944380ac81082d4b021f398733dd84f3a6c569a7/cache-eeaac9fc3bba987b_*_of_00008.arrow
+Some weights of the model checkpoint at google-bert/bert-base-uncased were not used when initializing BertForQuestionAnswering: ['cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertForQuestionAnswering from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForQuestionAnswering from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForQuestionAnswering were not initialized from the model checkpoint at google-bert/bert-base-uncased and are newly initialized: ['qa_outputs.bias', 'qa_outputs.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[baseline] gpu=NVIDIA A100-PCIE-40GB features_train=88524 batch=32 steps/epoch=2766 precision=bf16
+[baseline] epoch 1/2 train_loss=1.6007 time=413.5s throughput=214.1 samples/s
+[baseline] epoch 2/2 train_loss=0.8180 time=410.3s throughput=215.7 samples/s
+RESULT {"tag": "baseline", "gpus": 1, "nodes": 1, "batch_per_gpu": 32, "global_batch": 32, "epochs": 2, "precision": "bf16", "train_features": 88524, "epoch_times_s": [413.4754172596149, 410.3109368830919], "train_time_s": 823.7863541427068, "throughput_samples_s": 214.89066808374642, "train_loss": [1.6006657030818605, 0.8179504492536284], "val_loss": 1.0086866875430596, "peak_mem_gb": 11.38760704, "slurm_job_id": "11157061"}
+Resultados en /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso382/hpctools/runs/baseline_11157061.json

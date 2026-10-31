@@ -1,0 +1,8 @@
+# Dependencias del Lab AI (BERT-base / SQuAD).
+# Versiones usadas en FinisTerrae III (venv $STORE/mypython, Python 3.7):
+#   torch 1.13.1+cu117 (viene con CUDA en el venv del curso), transformers 4.30.2
+# Con Python 3.7 instalar solo binarios: pip install --only-binary=:all: transformers datasets
+torch
+transformers
+datasets
+numpy
